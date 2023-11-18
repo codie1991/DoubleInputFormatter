@@ -10,7 +10,7 @@ import DoubleInputFormatter
 
 class ViewController: UIViewController {
 
-    /// UITextField as required by componet
+    /// UITextField as required by component
     lazy var bodyTextField: UITextField = {
         let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
     /// The formatter for our `UITextField`
     lazy var textFieldFormatter: DoubleInputFormatterTextDelegate = {
-        // 1. Create a formatter
+        // 1. Create a formatter, Currency is set by default
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         
